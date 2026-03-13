@@ -77,6 +77,13 @@ main {
   }
 }
 
+@media (min-width: 1400px) {
+  main {
+    max-width: 1360px;
+    padding: 0 48px 120px;
+  }
+}
+
 /* Section bands: full-width background, content padded */
 .section-band {
   margin: 0;
@@ -180,6 +187,13 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+}
+
+@media (min-width: 1400px) {
+  .nav {
+    max-width: 1360px;
+    padding: 14px 48px;
+  }
 }
 
 .brand {
@@ -306,6 +320,11 @@ main {
   height: 2px;
   border-radius: 999px;
   background: var(--text-main);
+}
+
+/* Hide mobile menu on desktop; only show inside overlay on small screens */
+.mobile-nav-overlay {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -485,6 +504,13 @@ main {
   align-items: center;
   max-width: 1140px;
   margin: 0 auto;
+}
+
+@media (min-width: 1400px) {
+  .hero-box {
+    max-width: 1320px;
+    gap: 80px;
+  }
 }
 
 .hero-box::before {
