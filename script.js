@@ -43,21 +43,39 @@ document.querySelectorAll("[data-scroll]").forEach((btn) => {
   });
 });
 
-// Burger menu për mobile
+// Burger menu për mobile (overlay is outside header so it covers full screen)
 const nav = document.querySelector(".nav");
 const navToggle = document.querySelector(".nav-toggle");
-if (nav && navToggle) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("nav-open");
-    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-  });
+const mobileOverlay = document.getElementById("mobile-nav-overlay");
+const mobileLinks = mobileOverlay && mobileOverlay.querySelector(".mobile-nav-links");
 
-  // Mbyll menunë kur klikohet një link
-  nav.querySelectorAll(".nav-links a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("nav-open");
-      navToggle.setAttribute("aria-expanded", "false");
-    });
+function setMenuOpen(isOpen) {
+  document.body.classList.toggle("menu-open", isOpen);
+  if (nav) nav.classList.toggle("nav-open", isOpen);
+  if (navToggle) navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  if (mobileOverlay) mobileOverlay.setAttribute("aria-hidden", isOpen ? "false" : "true");
+  document.body.style.overflow = isOpen ? "hidden" : "";
+}
+
+if (navToggle) {
+  navToggle.addEventListener("click", () => {
+    setMenuOpen(!document.body.classList.contains("menu-open"));
+  });
+}
+
+if (mobileOverlay) {
+  const backdrop = mobileOverlay.querySelector(".mobile-nav-backdrop");
+  const closeBtn = mobileOverlay.querySelector(".mobile-nav-close");
+  if (backdrop) backdrop.addEventListener("click", () => setMenuOpen(false));
+  if (closeBtn) closeBtn.addEventListener("click", () => setMenuOpen(false));
+  mobileOverlay.addEventListener("click", (e) => {
+    if (e.target === mobileOverlay) setMenuOpen(false);
+  });
+}
+
+if (mobileLinks) {
+  mobileLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setMenuOpen(false));
   });
 }
 

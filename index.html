@@ -126,9 +126,29 @@
       <button class="nav-toggle" aria-label="Hap menunë" aria-expanded="false">
         <span class="nav-toggle-line"></span>
         <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
       </button>
     </div>
   </header>
+
+  <!-- Mobile menu: backdrop + slide-in panel -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true">
+    <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+    <div class="mobile-nav-drawer">
+      <div class="mobile-nav-header">
+        <span class="mobile-nav-title">Menu</span>
+        <button type="button" class="mobile-nav-close" aria-label="Mbyll menunë">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <nav class="mobile-nav-links" aria-label="Menuja kryesore">
+        <a href="#hero">Home</a>
+        <a href="#kategori">Evente</a>
+        <a href="#procesi">Proçesi</a>
+        <a href="#kontakt">Porosit ftesën tënde</a>
+      </nav>
+    </div>
+  </div>
 
   <main>
     <!-- HERO -->
