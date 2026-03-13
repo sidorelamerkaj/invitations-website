@@ -7,15 +7,32 @@
   <meta name="description" content="Ftesa dixhitale ekskluzive, elegante dhe të personalizuara për dasma, ditëlindje dhe evente speciale. Dizajn luksoz, animacione të buta dhe shpërndarje me një link privat." />
   <meta name="keywords" content="ftesa dixhitale, ftesa dixhitale dasme, ftesa online, wedding invitation digital, digital birthday invite, ftesa luksoze, Invites Studio, SM Developments" />
   <meta name="robots" content="index, follow" />
+  <meta name="author" content="SM Developments" />
+  <meta name="theme-color" content="#a67c52" />
   <link rel="canonical" href="https://smdevs.al/invites" />
-  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="icon" type="image/png" href="assets/sm-icon.png" />
+  <link rel="apple-touch-icon" href="assets/sm-icon.png" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLB53C7N14"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LLB53C7N14');
+  </script>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SM Invites Studio" />
+  <meta property="og:locale" content="sq_AL" />
   <meta property="og:title" content="Ftesa Dixhitale Ekskluzive për Momente të Paharrueshme" />
   <meta property="og:description" content="Krijojmë ftesa dixhitale luksoze dhe të personalizuara për dasma, ditëlindje dhe evente speciale, gati për t’u shpërndarë me një link." />
   <meta property="og:url" content="https://smdevs.al/invites" />
   <meta property="og:image" content="https://smdevs.al/invites/assets/wedding-ring.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -30,6 +47,45 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SM Developments",
+    "url": "https://smdevs.al",
+    "logo": "https://smdevs.al/invites/assets/sm-icon.png",
+    "description": "SM Invites Studio – ftesa dixhitale ekskluzive për dasma, ditëlindje dhe evente speciale.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "info@smdevs.al",
+      "telephone": "+355693162052",
+      "areaServed": "AL",
+      "availableLanguage": "Albanian"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Ftesa Dixhitale Ekskluzive për Dasma, Ditëlindje & Evente | SM Invites Studio",
+    "description": "Ftesa dixhitale ekskluzive, elegante dhe të personalizuara për dasma, ditëlindje dhe evente speciale. Dizajn luksoz dhe shpërndarje me një link privat.",
+    "url": "https://smdevs.al/invites",
+    "inLanguage": "sq-AL",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "SM Invites Studio",
+      "url": "https://smdevs.al/invites"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SM Developments",
+      "url": "https://smdevs.al",
+      "logo": "https://smdevs.al/invites/assets/sm-icon.png"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "Service",
     "name": "SM Invites Studio - Ftesa Dixhitale",
     "description": "Krijim ftesash dixhitale ekskluzive dhe të personalizuara për dasma, ditëlindje dhe evente speciale.",
@@ -38,28 +94,27 @@
       "@type": "Organization",
       "name": "SM Developments",
       "url": "https://smdevs.al",
-      "logo": "https://smdevs.al/invites/assets/icon.png"
+      "logo": "https://smdevs.al/invites/assets/sm-icon.png"
     },
-    "areaServed": "AL",
+    "areaServed": { "@type": "Country", "name": "Albania" },
     "inLanguage": "sq-AL",
     "serviceType": "Digital Invitation Design"
   }
   </script>
 </head>
 <body>
-  <main>
-    <!-- NAV -->
-    <header class="nav">
+  <header class="site-header">
+    <div class="nav">
       <div class="brand">
         <div class="brand-logo">
-          <img src="assets/icon.png" alt="SM Invites Studio logo" class="brand-logo-image" />
+          <img src="assets/sm-icon.png" alt="SM Invites Studio logo" class="brand-logo-image" />
         </div>
         <div>
           <div class="brand-text-main">SM INVITES STUDIO</div>
           <div class="brand-text-sub">Digital luxury invites</div>
         </div>
       </div>
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Kryesor">
         <a href="#hero">Home</a>
         <a href="#kategori">Evente</a>
         <a href="#procesi">Proçesi</a>
@@ -72,107 +127,61 @@
         <span class="nav-toggle-line"></span>
         <span class="nav-toggle-line"></span>
       </button>
-    </header>
+    </div>
+  </header>
 
+  <main>
     <!-- HERO -->
-    <section class="hero-layout" id="hero">
-      <div class="hero-card reveal">
-        <div class="hero-tagline">
-          <span>Ekskluzive. E personalizuar. Plot emocion.</span>
-        </div>
-
-        <h1 class="hero-heading">
-          Ftesa Dixhitale Ekskluzive <BR>
-          <span class="highlight">për Momente të Paharrueshme</span>
-        </h1>
-
-        <p class="hero-subtitle">
-          Krijojmë përvoja elegante dhe të personalizuara në formë ftesash dixhitale, të animuara,
-          të sofistikuara dhe të ndërtuara për të lënë mbresë që në klikimin e parë.
-        </p>
-
-        <div class="hero-cta-row">
-          <a href="#koleksioni" class="btn-primary">
-            <span>Zbulo koleksionin</span>
-          </a>
-          <a href="#kontakt" class="btn-ghost">
-            <span>Krijo ftesën tënde</span>
-          </a>
-        </div>
-
-        <div class="hero-note">
-          <span class="hero-dot"></span>
-          <span>Çdo detaj menduar për të reflektuar stilin dhe historinë tuaj.</span>
-        </div>
-
-        <div class="hero-image-wide">
-          <img src="assets/wedding-ring.jpg" alt="Shembull ftesë dixhitale luksoze" />
-        </div>
-      </div>
-
-      <div class="hero-showcase">
-        <div class="hero-mockup reveal delay-1">
-          <div class="hero-mockup-header">
-            <div class="hero-mockup-dots">
-              <span class="hero-mockup-dot"></span>
-              <span class="hero-mockup-dot"></span>
-              <span class="hero-mockup-dot"></span>
-            </div>
-            <span>Preview Ftesë Dixhitale</span>
+    <section class="hero-layout" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-box reveal">
+        <div class="hero-content">
+          <div class="hero-tagline">
+            <span>Ekskluzive. E personalizuar. Plot emocion.</span>
           </div>
 
-          <div class="hero-phone-frame">
-            <div class="phone">
-              <div class="phone-inner">
-                <div class="phone-screen">
-                  <!-- Vetëm video preview e ftesës, pa shtresa sipër -->
-                  <video class="phone-video" src="assets/video-preview.mp4" autoplay muted loop playsinline></video>
+          <h1 class="hero-heading" id="hero-heading">
+            Ftesa Dixhitale Ekskluzive<br />
+            <span class="highlight">për Momente të Paharrueshme</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Krijojmë përvoja elegante dhe të personalizuara në formë ftesash dixhitale, të animuara,
+            të sofistikuara dhe të ndërtuara për të lënë mbresë që në klikimin e parë.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#koleksioni" class="btn-primary">
+              <span>Zbulo koleksionin</span>
+            </a>
+            <a href="#kontakt" class="btn-ghost">
+              <span>Krijo ftesën tënde</span>
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span class="hero-dot"></span>
+            <span>Çdo detaj menduar për të reflektuar stilin dhe historinë tuaj.</span>
+          </div>
+        </div>
+
+        <div class="hero-showcase">
+          <div class="hero-mockup reveal delay-1">
+            <div class="hero-mockup-header">
+              <div class="hero-mockup-dots">
+                <span class="hero-mockup-dot"></span>
+                <span class="hero-mockup-dot"></span>
+                <span class="hero-mockup-dot"></span>
+              </div>
+              <span>Preview Ftesë Dixhitale</span>
+            </div>
+
+            <div class="hero-phone-frame">
+              <div class="phone">
+                <div class="phone-inner">
+                  <div class="phone-screen">
+                    <video class="phone-video" src="assets/video-preview.mp4" autoplay muted loop playsinline title="Parashikim ftese dixhitale"></video>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-floating">
-          <div class="floating-card reveal delay-2">
-            <h3>🌿 NJË FTESË QË TREGON HISTORINË TUAJ</h3>
-            <p>
-              Çdo event është unik. Ftesa juaj duhet të jetë po aq e veçantë.
-            </p>
-            <small>
-              Ne dizajnojmë ftesa dixhitale me estetikë të rafinuar, tipografi elegante dhe
-              animacione të buta që krijojnë emocion dhe pritshmëri.
-            </small>
-            <div class="floating-pills">
-              <span class="pill">
-                <span class="pill-dot"></span>
-                Animacione të buta
-              </span>
-              <span class="pill">
-                <span class="pill-dot"></span>
-                Tipografi elegante
-              </span>
-              <span class="pill">
-                <span class="pill-dot"></span>
-                Strukturë interaktive
-              </span>
-            </div>
-          </div>
-
-          <div class="floating-card reveal delay-3">
-            <h3>Detaje që flasin për ju</h3>
-            <small>
-              Nga momenti i hapjes deri te konfirmimi i pjesëmarrjes, çdo element është menduar
-              për të reflektuar stilin dhe personalitetin tuaj.
-            </small>
-            <div class="metrics-row">
-              <div class="metric">
-                <strong>03</strong>
-                <span>kategori kryesore: dasma, ditëlindje, evente speciale</span>
-              </div>
-              <div class="metric">
-                <strong>100%</strong>
-                <span>personalizim estetik &amp; përmbajtje</span>
               </div>
             </div>
           </div>
@@ -181,143 +190,156 @@
     </section>
 
     <!-- KOLEKSIONI / PERGJITHSHME -->
-    <section id="koleksioni" class="reveal">
-      <div class="section-label">Koleksioni ynë</div>
-      <h2 class="section-title">Një univers ftesash dixhitale premium</h2>
-      <p class="section-intro">
-        Nga romantika e dasmës, tek energjia e ditëlindjes dhe sofistikimi i eventeve speciale,
-        çdo ftesë është menduar si një eksperiencë e plotë, jo thjesht si një kartë njoftimi.
-      </p>
+    <section id="koleksioni" class="reveal koleksioni-section section-band" aria-labelledby="koleksioni-heading">
+      <div class="koleksioni-inner">
+        <div class="section-label koleksioni-label">Koleksioni ynë</div>
+        <h2 class="koleksioni-title" id="koleksioni-heading">Një univers ftesash dixhitale premium</h2>
+        <p class="koleksioni-intro">
+          Nga romantika e dasmës, tek energjia e ditëlindjes dhe sofistikimi i eventeve speciale,
+          çdo ftesë është menduar si një eksperiencë e plotë, jo thjesht si një kartë njoftimi.
+        </p>
+        <div class="koleksioni-accent"></div>
+      </div>
     </section>
 
     <!-- DASMA / DITELINDJE / EVENTE -->
-    <section id="kategori" class="reveal">
-      <div class="grid-3">
-        <!-- DASMA -->
-        <article class="card reveal delay-1" id="dasma">
-          <div class="card-header">
-            <span class="card-label">💍 Dasma</span>
-            <span class="card-tag">Elegancë · Romancë · Përjetësi</span>
+    <section id="kategori" class="reveal section-band" aria-label="Evente: Dasma, Ditëlindje, Evente speciale">
+      <div class="occasion-list">
+        <article class="occasion reveal delay-1" id="dasma">
+          <div class="occasion-media">
+            <img src="assets/wedding-rings2.png" alt="Ftesë dixhitale dasme" />
           </div>
-          <h3 class="card-title">Një hyrje magjike për ditën tuaj</h3>
-          <p class="card-subtitle">
-            Ftesa dixhitale për dasmë nuk është thjesht informacion, është prezantimi i historisë suaj të dashurisë.
-          </p>
-          <p class="card-body">
-            E ndërtuar për të emocionuar që në sekondat e para, nga animacioni hyrës, tek muzika dhe
-            detajet e vendndodhjes.
-          </p>
-          <ul class="card-list">
-            <li>Animacion hyrës i personalizuar</li>
-            <li>Numërim mbrapsht deri në ditën e madhe</li>
-            <li>Lokacion i integruar &amp; hartë interaktive</li>
-            <li>Konfirmim pjesëmarrjeje (RSVP) i thjeshtë</li>
-            <li>Muzikë në sfond për një atmosferë magjike</li>
-          </ul>
-          <div class="card-footer">
-            <span>Një eksperiencë moderne për një ditë të përjetshme.</span>
-            <span class="card-badge">Wedding Edition</span>
-          </div>
-          <div class="card-image">
-            <!-- Zëvendëso me imazh dasme -->
-            <img src="assets/love1.png" alt="Ftesë dixhitale dasme" />
+          <div class="occasion-copy">
+            <div class="occasion-meta">
+              <span class="occasion-label">Dasma</span>
+              <span class="occasion-tagline">Elegancë · Romancë · Përjetësi</span>
+            </div>
+            <h3 class="occasion-title">Një hyrje magjike për ditën tuaj</h3>
+            <p class="occasion-description">
+              Ftesa dixhitale për dasmë nuk është thjesht informacion, është prezantimi i historisë suaj të dashurisë.
+              E ndërtuar për të emocionuar që në sekondat e para, nga animacioni hyrës, tek muzika dhe detajet e vendndodhjes.
+            </p>
+            <ul class="occasion-points">
+              <li>Animacion hyrës i personalizuar</li>
+              <li>Numërim mbrapsht deri në ditën e madhe</li>
+              <li>Lokacion i integruar &amp; hartë interaktive</li>
+              <li>Konfirmim pjesëmarrjeje (RSVP) i thjeshtë</li>
+              <li>Muzikë në sfond për një atmosferë magjike</li>
+            </ul>
+            <p class="occasion-note">Një eksperiencë moderne për një ditë të përjetshme.</p>
           </div>
         </article>
 
-        <!-- DITELINDJE -->
-        <article class="card reveal delay-2" id="ditelindje">
-          <div class="card-header">
-            <span class="card-label">🎉 Ditëlindje</span>
-            <span class="card-tag">Stil · Energji · Karakter</span>
+        <article class="occasion reveal delay-2" id="ditelindje">
+          <div class="occasion-media">
+            <img src="assets/birthday-cake.png" alt="Ftesë dixhitale ditëlindjeje" />
           </div>
-          <h3 class="card-title">Nga elegantja tek super festive</h3>
-          <p class="card-subtitle">
-            Nga festat elegante për të rritur deri tek momentet plot ngjyra për më të vegjlit,
-            krijojmë ftesa që transmetojnë atmosferën e festës që në sekondën e parë.
-          </p>
-          <p class="card-body">
-            Ideal për surpriza, festa familjare, ditëlindje tematike apo evente intime midis miqsh.
-          </p>
-          <ul class="card-list">
-            <li>Dizajn kreativ dhe i personalizuar</li>
-            <li>Galeri fotografish dhe kujtimesh</li>
-            <li>Mesazh i dedikuar &amp; storytelling</li>
-            <li>Strukturë dinamike dhe e lehtë për t’u shpërndarë</li>
-          </ul>
-          <div class="card-footer">
-            <span>Çdo klikim sjell atmosferën e festës më afër.</span>
-            <span class="card-badge">Birthday Edition</span>
-          </div>
-          <div class="card-image">
-            <!-- Zëvendëso me imazh ditëlindjeje -->
-            <img src="assets/birthday1.png" alt="Ftesë dixhitale ditëlindjeje" />
+          <div class="occasion-copy">
+            <div class="occasion-meta">
+              <span class="occasion-label">Ditëlindje</span>
+              <span class="occasion-tagline">Stil · Energji · Karakter</span>
+            </div>
+            <h3 class="occasion-title">Nga elegantja tek super festive</h3>
+            <p class="occasion-description">
+              Nga festat elegante për të rritur deri tek momentet plot ngjyra për më të vegjlit,
+              krijojmë ftesa që transmetojnë atmosferën e festës që në sekondën e parë.
+              Ideale për surpriza, festa familjare, ditëlindje tematike apo evente intime midis miqsh.
+            </p>
+            <ul class="occasion-points">
+              <li>Dizajn kreativ dhe i personalizuar</li>
+              <li>Galeri fotografish dhe kujtimesh</li>
+              <li>Mesazh i dedikuar &amp; storytelling</li>
+              <li>Strukturë dinamike dhe e lehtë për t’u shpërndarë</li>
+            </ul>
+            <p class="occasion-note">Çdo klikim sjell atmosferën e festës më afër.</p>
           </div>
         </article>
 
-        <!-- EVENTE SPECIALE -->
-        <article class="card reveal delay-3" id="evente">
-          <div class="card-header">
-            <span class="card-label">🎊 Evente speciale</span>
-            <span class="card-tag">Minimalizëm modern · Luks i rafinuar</span>
+        <article class="occasion reveal delay-3" id="evente">
+          <div class="occasion-media">
+            <img src="assets/champagne-glasses.png" alt="Ftesë dixhitale eventesh speciale" />
           </div>
-          <h3 class="card-title">Momente që meritojnë prezantim me klas</h3>
-          <p class="card-subtitle">
-            Fejesa, baby shower, diplomime, evente private apo korporative, çdo organizim kërkon një prezantim të denjë.
-          </p>
-          <p class="card-body">
-            Ftesat tona dixhitale kombinojnë minimalizmin modern me detaje luksoze për një rezultat të sofistikuar,
-            gati për t’u shpërndarë globalisht.
-          </p>
-          <ul class="card-list">
-            <li>Struktura fleksibël për çdo tip event</li>
-            <li>Elemente luksoze dhe minimaliste</li>
-            <li>Opsione për brande &amp; evente korporative</li>
-          </ul>
-          <div class="card-footer">
-            <span>Prezantim që flet gjuhën e eventit tuaj.</span>
-            <span class="card-badge">Special Events</span>
-          </div>
-          <div class="card-image">
-            <!-- Zëvendëso me imazh eventi -->
-            <img src="assets/events1.png" alt="Ftesë dixhitale eventesh speciale" />
+          <div class="occasion-copy">
+            <div class="occasion-meta">
+              <span class="occasion-label">Evente speciale</span>
+              <span class="occasion-tagline">Minimalizëm modern · Luks i rafinuar</span>
+            </div>
+            <h3 class="occasion-title">Momente që meritojnë prezantim me klas</h3>
+            <p class="occasion-description">
+              Fejesa, baby shower, diplomime, evente private apo korporative, çdo organizim kërkon një prezantim të denjë.
+              Ftesat tona kombinojnë minimalizmin modern me detaje luksoze për një rezultat të sofistikuar, gati për t’u shpërndarë globalisht.
+            </p>
+            <ul class="occasion-points">
+              <li>Struktura fleksibël për çdo tip event</li>
+              <li>Elemente luksoze dhe minimaliste</li>
+              <li>Opsione për brande &amp; evente korporative</li>
+            </ul>
+            <p class="occasion-note">Prezantim që flet gjuhën e eventit tuaj.</p>
           </div>
         </article>
       </div>
     </section>
 
     <!-- PSE FTESA DIXHITALE PREMIUM -->
-    <section class="reveal">
-      <div class="section-label">Pse ftesa dixhitale premium?</div>
-      <h2 class="section-title">Sepse eleganca nuk ka nevojë për letër</h2>
-        <p class="section-intro">
-          Ftesat tona dixhitale janë menduar për të qenë po aq të paharrueshme sa edhe vetë momenti.
-          Nga shpërndarja e menjëhershme deri tek përvoja interaktive, çdo element shkon përtej një ftese tradicionale.
-        </p>
-
-      <div class="pill-row">
+    <section class="premium-why-section reveal section-band">
+      <div class="premium-why-box">
+        <div class="premium-why-header">
+          <span class="premium-why-label">Pse ftesa dixhitale premium?</span>
+          <h2 class="premium-why-title">Sepse eleganca nuk ka nevojë për letër</h2>
+          <p class="premium-why-intro">
+            Ftesat tona dixhitale janë menduar për të qenë po aq të paharrueshme sa edhe vetë momenti.
+            Nga shpërndarja e menjëhershme deri tek përvoja interaktive, çdo element shkon përtej një ftese tradicionale.
+          </p>
+        </div>
+        <div class="premium-why-grid">
+          <div class="premium-why-item">
+            <span class="premium-why-icon">01</span>
+            <strong>Shpërndarje me një link privat</strong>
+            <span>Link ekskluziv, gati për t'u dërguar në WhatsApp, email apo rrjete sociale.</span>
+          </div>
+          <div class="premium-why-item">
+            <span class="premium-why-icon">02</span>
+            <strong>Moderne &amp; miqësore me ambientin</strong>
+            <span>Pa letër, pa printime, vetëm elegancë dixhitale.</span>
+          </div>
+          <div class="premium-why-item">
+            <span class="premium-why-icon">03</span>
+            <strong>Personalizim estetik i plotë</strong>
+            <span>Ngjyra, tipografi, elemente vizuale dhe ritëm animacionesh.</span>
+          </div>
+          <div class="premium-why-item">
+            <span class="premium-why-icon">04</span>
+            <strong>Dorëzim i shpejtë &amp; profesional</strong>
+            <span>Gati për t'u përdorur brenda një kohe shumë të shkurtër.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reveal" style="display:none;">
+      <div class="pill-row" aria-hidden="true">
         <div class="pill-large">
-          <div class="pill-large-icon">📱</div>
+          <div class="pill-large-icon">01</div>
           <div>
             <strong>Shpërndarje me një link privat</strong><br />
             Link ekskluziv, gati për t’u dërguar në WhatsApp, email apo rrjete sociale.
           </div>
         </div>
         <div class="pill-large">
-          <div class="pill-large-icon">🌍</div>
+          <div class="pill-large-icon">02</div>
           <div>
             <strong>Moderne &amp; miqësore me ambientin</strong><br />
             Pa letër, pa printime, vetëm elegancë dixhitale.
           </div>
         </div>
         <div class="pill-large">
-          <div class="pill-large-icon">🎨</div>
+          <div class="pill-large-icon">03</div>
           <div>
             <strong>Personalizim estetik i plotë</strong><br />
             Ngjyra, tipografi, elemente vizuale dhe ritëm animacionesh.
           </div>
         </div>
         <div class="pill-large">
-          <div class="pill-large-icon">⚡</div>
+          <div class="pill-large-icon">04</div>
           <div>
             <strong>Dorëzim i shpejtë &amp; profesional</strong><br />
             Gati për t’u përdorur brenda një kohe shumë të shkurtër.
@@ -327,9 +349,9 @@
     </section>
 
     <!-- PROCESI -->
-    <section id="procesi" class="reveal">
+    <section id="procesi" class="reveal section-band" aria-labelledby="procesi-title">
       <div class="section-label">Procesi ynë</div>
-      <h2 class="section-title">Nga ideja tek linku ekskluziv</h2>
+      <h2 class="section-title" id="procesi-title">Nga ideja tek linku ekskluziv</h2>
         <p class="section-intro">
           Tre hapa të thjeshtë për të kaluar nga një ide në një ftesë dixhitale luksoze që i impresionon të ftuarit tuaj
           që në klikimin e parë.
@@ -366,35 +388,33 @@
     </section>
 
     <!-- FINAL CTA -->
-    <section id="kontakt" class="cta-final reveal">
-      <div>
-        <div class="cta-eyebrow">🌟 Gati për të nisur?</div>
-        <h2 class="cta-title">Le të krijojmë diçka të jashtëzakonshme</h2>
-        <p class="cta-text">
-          Ftesa juaj është prezantimi i parë i eventit tuaj. Sigurohuni që të jetë i paharrueshëm,
-          i sofistikuar, i personalizuar dhe plot emocion.
-        </p>
-
-        <div class="cta-buttons">
-          <a class="btn-primary" id="cta-request" href="tel:+355693162052">
-            👉 Kërko ftesën tënde
-          </a>
-          <a class="btn-ghost" id="cta-contact" href="mailto:info@smdevs.al">
-            👉 Na kontakto për personalizim
-          </a>
+    <section id="kontakt" class="cta-final reveal" aria-labelledby="cta-title">
+      <div class="cta-main">
+        <div class="cta-copy">
+          <div class="cta-eyebrow">Gati për të nisur?</div>
+          <h2 class="cta-title" id="cta-title">Le të krijojmë diçka të jashtëzakonshme</h2>
+          <p class="cta-text">
+            Ftesa juaj është prezantimi i parë i eventit tuaj. Sigurohuni që të jetë i paharrueshëm,
+            i sofistikuar, i personalizuar dhe plot emocion.
+          </p>
+          <p class="cta-note"></p>
         </div>
 
-        <p class="cta-note"></p>
+        <div class="cta-buttons">
+          <a
+            class="btn-primary"
+            id="cta-request"
+            href="https://wa.me/355693162052?text=Pershendetje%2C%20jam%20i%20interesuar%20per%20nje%20ftese%20dixhitale."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Kërko ftesën tënde
+          </a>
+          <a class="btn-ghost" id="cta-contact" href="mailto:info@smdevs.al">
+            Na kontakto për personalizim
+          </a>
+        </div>
       </div>
-
-      <aside class="cta-badge">
-        <div class="cta-badge-title">Gati për hapin tjetër?</div>
-        <ul class="cta-badge-points">
-          <li>Dërgoni detajet kryesore të eventit (datë, orë, lokacion, numër të ftuarish).</li>
-          <li>Zgjidhni kategorinë: dasmë, ditëlindje, event special apo korporativ.</li>
-          <li>Merrni një propozim dizajni + kohën e dorëzimit.</li>
-        </ul>
-      </aside>
     </section>
 
     <footer>
