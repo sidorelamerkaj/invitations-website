@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Together We Say Yes — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="envelope-screen" class="envelope-screen">
+    <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="envelope-body"></div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-seal-wrap">
+          <div class="envelope-seal-ripple" aria-hidden="true"></div>
+          <div class="envelope-seal-ripple envelope-seal-ripple--2" aria-hidden="true"></div>
+          <img src="assets/pink-heart.gif" alt="Open invitation" class="envelope-seal" onerror="this.src='assets/heart.png'" />
+        </div>
+        <div class="envelope-front"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="invite-content" class="invite-content">
+    <div class="noise"></div>
+    <header class="header"><p class="header-tagline" id="header-tagline">Save the date</p></header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-bg" style="--bg: url('assets/noname.jpg')"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+          <p class="hero-sub">We're getting married</p>
+          <h1 class="hero-names">
+            <span class="name name-first">Sara</span>
+            <span class="amp">&</span>
+            <span class="name name-second">Dani</span>
+          </h1>
+          <div class="hero-datetime">
+            <p class="hero-date">
+              <span class="date-day">Saturday</span>
+              <span class="date-num">15<sup class="date-ordinal">th</sup></span>
+              <span class="date-month">June</span>
+              <span class="date-year">2026</span>
+            </p>
+            <p class="hero-time">3:00 PM</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="countdown-section">
+        <h2 class="countdown-title">Counting the days</h2>
+        <div class="countdown" id="countdown">
+          <div class="countdown-item"><span class="countdown-value" id="days">00</span><span class="countdown-label">Days</span></div>
+          <div class="countdown-item"><span class="countdown-value" id="hours">00</span><span class="countdown-label">Hours</span></div>
+          <div class="countdown-item"><span class="countdown-value" id="mins">00</span><span class="countdown-label">Minutes</span></div>
+          <div class="countdown-item"><span class="countdown-value" id="secs">00</span><span class="countdown-label">Seconds</span></div>
+        </div>
+      </section>
+
+      <section class="invite-quote">
+        <div class="invite-quote-inner">
+          <div class="invite-quote-img-wrap">
+            <img src="assets/srmist102.jpg" alt="" class="invite-quote-img" />
+          </div>
+          <div class="invite-quote-content">
+            <p class="guest-line" id="guest-line" hidden>Dear <span id="guest-name"></span>,</p>
+            <blockquote class="invite-quote-text">“We would be honoured to have you share in the joy of our wedding day. Your presence is the greatest gift we could wish for.”</blockquote>
+            <p class="invite-quote-names">Sara & Dani</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2 class="gallery-title">Our story</h2>
+        <p class="gallery-description">From our first meeting to this day, every moment has led us here. We are so grateful for the love and support of our family and friends as we begin this new chapter together.</p>
+        <div class="story-list">
+          <article class="story-item story-item--feature">
+            <div class="story-item-media"><img src="assets/stocksnap.jpg" alt="" /></div>
+            <div class="story-item-content">
+              <span class="story-item-step">01</span>
+              <h3 class="story-item-title">Where it began</h3>
+              <p class="story-item-text">A chance meeting that turned into something we never expected. We knew from the start that this was different.</p>
+            </div>
+          </article>
+          <article class="story-item">
+            <div class="story-item-media"><img src="assets/couple3.jpg" alt="" /></div>
+            <div class="story-item-content">
+              <span class="story-item-step">02</span>
+              <h3 class="story-item-title">Growing together</h3>
+              <p class="story-item-text">Every adventure and quiet moment brought us closer. We built a life we both love.</p>
+            </div>
+          </article>
+          <article class="story-item">
+            <div class="story-item-media"><img src="assets/couple4.jpg" alt="" /></div>
+            <div class="story-item-content">
+              <span class="story-item-step">03</span>
+              <h3 class="story-item-title">The question</h3>
+              <p class="story-item-text">When we said yes to forever, our families and friends celebrated with us. That joy is what we carry into our wedding day.</p>
+            </div>
+          </article>
+          <article class="story-item">
+            <div class="story-item-media"><img src="assets/couple2.jpg" alt="" /></div>
+            <div class="story-item-content">
+              <span class="story-item-step">04</span>
+              <h3 class="story-item-title">Counting the days</h3>
+              <p class="story-item-text">Preparing for our celebration with the same love and care that has brought us here.</p>
+            </div>
+          </article>
+          <article class="story-item">
+            <div class="story-item-media"><img src="assets/couple5.jpg" alt="" /></div>
+            <div class="story-item-content">
+              <span class="story-item-step">05</span>
+              <h3 class="story-item-title">Our new chapter</h3>
+              <p class="story-item-text">We cannot wait to share this day with you and begin the rest of our story together.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="venue">
+        <div class="venue-bg" style="--bg: url('assets/floraboss.jpg')"></div>
+        <div class="venue-overlay"></div>
+        <div class="venue-inner">
+          <h2>Wedding location</h2>
+          <p class="venue-name">Tirana Marriott Hotel</p>
+          <p class="venue-datetime">Saturday, June 15, 2026 — 3:00 PM</p>
+          <a href="https://maps.app.goo.gl/Jj3RbbKkxDhvvY377" target="_blank" rel="noopener noreferrer" class="venue-directions">
+            <span class="venue-directions-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            Get directions
+          </a>
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="details-inner">
+          <h2 class="details-title">Celebrate with us</h2>
+          <div class="details-ornament" aria-hidden="true"></div>
+          <div class="celebrate-panel-wrap">
+            <div class="celebrate-panel">
+              <div class="celebrate-main">
+                <div class="celebrate-program">
+                  <span class="meta-label">Program</span>
+                  <ul class="program-timeline">
+                    <li class="program-item"><span class="program-time">4:00 PM</span><span class="program-dot"></span><span class="program-label">Cocktail hour</span></li>
+                    <li class="program-item"><span class="program-time">6:00 PM</span><span class="program-dot"></span><span class="program-label">Dinner & celebration</span></li>
+                  </ul>
+                </div>
+                <div class="celebrate-dress-code">
+                  <span class="meta-label">Dress code</span>
+                  <ul class="program-timeline dress-list">
+                    <li class="program-item"><span class="program-time">Woman</span><span class="program-dot"></span><span class="program-label">Formal</span></li>
+                    <li class="program-item"><span class="program-time">Man</span><span class="program-dot"></span><span class="program-label">Formal</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="celebrate-confirm">
+                <span class="meta-label">Confirm your participation</span>
+                <p class="confirm-links"><a href="tel:+355XXXXXXXX">+355 XXX XXX XXX</a> · <a href="mailto:wedding@example.com">wedding@example.com</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="details-signature">
+            <p class="details-closing">We can't wait to celebrate with you.</p>
+            <p class="details-names">Sara & Dani</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-credit">© <span id="current-year"></span> Powered by <a href="https://smdevs.al" target="_blank" rel="noopener noreferrer">SM Developments</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
